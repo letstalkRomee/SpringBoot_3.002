@@ -8,21 +8,21 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-public class Todo {
+public class TODO {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @NotNull
     @Size(min = 4)
-    private String taskname;
+    private String taskName;
 
     @NotNull
     @Size(min = 3)
-    private String duedate;
+    private String dueDate;
 
     @NotNull
-    @Size(min = 10)
+    @Size(min = 3)
     private String priority;
 
     public long getId() {
@@ -33,20 +33,20 @@ public class Todo {
         this.id = id;
     }
 
-    public String getTaskname() {
-        return taskname;
+    public String getTaskName() {
+        return taskName;
     }
 
-    public void setTaskname(String taskname) {
-        this.taskname = taskname;
+    public void setTaskName(String taskName) {
+        this.taskName = taskName;
     }
 
-    public String getDuedate() {
-        return duedate;
+    public String getDueDate() {
+        return dueDate;
     }
 
-    public void setDuedate(String duedate) {
-        this.duedate = duedate;
+    public void setDueDate(String dueDate) {
+        this.dueDate = dueDate;
     }
 
     public String getPriority() {
