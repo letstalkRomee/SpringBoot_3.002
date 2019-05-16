@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="/">Show All TODOS </a><br />
+ID  :<span th:text="${todo.id}"  ></span><br />
+Task Name :<span th:text="${todo.taskname}" ></span><br />
+Due Date :<p th:text="${todo.duedate}"  ></p>
+Priority  :<span th:text="${todo.description}" ></span><br />
+<a th:href="@{/delete/{id}(id=${todo.id})}">Delete this course </a>
+</body>
+</html>
