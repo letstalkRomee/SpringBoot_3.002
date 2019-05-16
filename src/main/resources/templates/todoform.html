@@ -12,15 +12,17 @@
     ID :<input type="text" th:field="*{id}" />
     <span th:if="${#fields.hasErrors('id')}"
           th:errors="*{id}"></span><br />
-    Task Name :<input type="text" th:fields="*{taskname}" />
+    Task Name :<input type="text" th:field="*{taskname}" />
     <span th:if="${#fields.hasErrors('taskname')}"
           th:errors="*{taskname}"></span><br />
-    Due Date :<textarea row="3" th:fields="*{duedate}" />
+    Due Date :<textarea row="3" th:field="*{duedate}" />
     <span th:if="${#fields.hasErrors('duedate')}"
           th:errors="*{duedate}"></span><br />
-    Priority:<textarea row="3" th:fields="*{priority}" />
+
+    Priority:<textarea row="3" th:field="*{priority}" />
     <span th:if="${#fields.hasErrors('priority')}"
-          th:errors="*{priority}"></span><br />
+          th:errors="*{priority}"></span>
+    <br />
     <input type="submit" value="Submit" />
 </form>
 </body>

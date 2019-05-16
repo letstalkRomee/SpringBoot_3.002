@@ -6,7 +6,7 @@
 </head>
 <body>
 <a href="/add">Add a Todo</a><br />
-<div th:each="todo :  ${todo}">
+<div th:each="todo :  ${todos}">
     <h4 th:inline="text">[[${todo.id}]] @ [[$todo.taskname}]] [[$todo.duedate}]]</h4>
     <p th:text="${todo.priority}"></p>
 </div>
